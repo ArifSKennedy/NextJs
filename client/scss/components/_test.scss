@@ -1,0 +1,48 @@
+.test { //class induk
+    color: blue;
+    &_container{
+        
+        font-size: 0.400;
+        height: 40%;
+        width: 50%;
+        flex-direction: row; 
+       
+           
+            
+         
+        
+    }
+    &_flex{ // class anak
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column; 
+
+        justify-content: center;
+        gap: 20px;
+       
+        padding: 0.500rem;
+        // justify content adalah posisi
+        
+        
+        
+        &_item{ // class anak dari &_flex
+            font-size: 0.300;
+            width: 100%;
+            height: 100px;
+            
+        &.green{
+            background-color: rgb(98, 198, 98);
+        } 
+        &.blue{
+            background-color: rgb(26, 26, 210);
+        } 
+        &.red{
+            background-color: rgb(128, 255, 0);
+        } 
+    }   
+ }
+ &_block {
+    display: block;
+    padding: 5rem;
+ }
+}
